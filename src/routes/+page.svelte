@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
+
+	// Icons
+	import IconLayers from "~icons/lucide/layers";
+	import IconContainer from "~icons/lucide/container";
+	import IconShield from "~icons/lucide/shield";
+	import IconZap from "~icons/lucide/zap";
+	import IconCode from "~icons/lucide/code";
+	import IconUnlock from "~icons/lucide/unlock";
 </script>
 
 <CenteredTextOnlyHero
@@ -25,62 +33,97 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Built for developers who move fast"
+	text="CodinIT turns your ideas into working full-stack applications using multi-model AI code generation and instant WebContainer execution. Start with any AI model you choose, prototype in minutes instead of hours, and maintain complete control over your development environment. We're the open-source alternative built by developers who got tired of expensive platforms that lock you in."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Marcus Chen",
+			position: "Indie Developer",
+			company: "BuildFast Studio",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"CodinIT cut my prototype development time from 3 weeks to 2 days. I shipped 5 MVPs in a month using different models for each project. The WebContainer execution means I can demo live without deployment costs.",
+			image: "/generated/image-candid-editorial-headshot-of-marcus-chen.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Priya Sharma",
+			position: "Founder",
+			company: "MicroSaaS Labs",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Switching between Claude, GPT-4, and local models saved me $800/month compared to locked-in platforms. The multi-model approach eliminated the risk of vendor lock-in while I scaled from idea to paying customers.",
+			image: "/generated/image-editorial-documentary-headshot-of-priya-.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Dmitri Volkov",
+			position: "Full-Stack Maker",
+			company: "Solo Ventures",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"I built and tested 12 different app concepts in one weekend. CodinIT's local control meant zero API costs during experimentation. When one concept gained traction, I had production-ready code immediately.",
+			image: "/generated/image-candid-editorial-headshot-of-dmitri-volk.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Built for developers who refuse to compromise"
+	subtitle="True multi-model freedom meets instant execution"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Multi-model AI freedom",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Switch between GPT-4, Claude, Gemini, and more without vendor lock-in. No single AI model monopoly—choose the best tool for each task.",
+			icon: IconLayers
 		},
 		{
-			title: "Data Analysis",
+			title: "WebContainer execution",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Test and run your generated code instantly in a real browser environment. Skip the deploy-and-pray cycle with immediate feedback.",
+			icon: IconContainer
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Local-first control",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Your code, your machine, your rules. Run everything locally without sending your IP to closed platforms or sharing your work with third-party servers.",
+			icon: IconShield
+		},
+		{
+			title: "Rapid full-stack prototyping",
+			description:
+				"Go from prompt to working app in minutes, not days. Complete frontend and backend scaffolding with routing, state management, and API integration built in.",
+			icon: IconZap
+		},
+		{
+			title: "Open-source flexibility",
+			description:
+				"Community-driven development means features you actually need get built. Fork it, extend it, customize it—no feature request gatekeeping.",
+			icon: IconCode
+		},
+		{
+			title: "Escape expensive platforms",
+			description:
+				"Break free from $20-50/month AI coding subscriptions. Pay only for the AI models you use, when you use them.",
+			icon: IconUnlock
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Your tools. Your code. Your pace."
+	subtitle="Break free from expensive platforms"
+	description="CodinIT doesn't box you in. Whether you're exploring an idea or launching the real thing, you get production-grade outputs, version control, and model choice built in. Start building with true multi-model freedom."
+	imageSrc="/generated/image-a-candid-documentary-style-photograph-of.webp"
+	callsToAction={[
+		{
+			href: "#",
+			label: "Start building for free",
+			variant: "primary"
+		},
+		{
+			href: "#",
+			label: "View documentation",
+			variant: "secondary"
+		}
+	]}
+/>

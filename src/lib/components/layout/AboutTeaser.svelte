@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		name: "Gerome Elassaad",
+		role: "Founder",
+		image: "/generated/image-candid-documentary-style-photograph-of-a.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"I watched platforms ignore their communities for years. Every feature request met with silence. Every developer need dismissed. So I built what they wouldn't—a tool that puts developers first, not last."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
