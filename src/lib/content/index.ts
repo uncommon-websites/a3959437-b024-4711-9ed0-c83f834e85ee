@@ -1,7 +1,7 @@
 export const CONFIG = {
-	companyName: "Company",
-	description: "Description",
+	companyName: "CodinIT",
+	description: "Transform prompts into production apps via multi-model AI code generation and WebContainer execution.",
 	image: "/og.png",
-	url: "https://example.com",
+	url: "https://codinit.dev",
 	fontFamily: "Inter Variable"
 };
